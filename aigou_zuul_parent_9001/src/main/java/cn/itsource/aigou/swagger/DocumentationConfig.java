@@ -13,6 +13,7 @@ import java.util.List;
 public class DocumentationConfig implements SwaggerResourcesProvider {
     @Override
     public List<SwaggerResource> get() {
+
         List resources = new ArrayList<>();
        //aigou网关前缀,employee网关路径   ；swagger的路径 ，以后增加了接口就在这配置就ok
         resources.add(swaggerResource("用户999系统", "/aigou/login/v2/api-docs", "2.0"));
